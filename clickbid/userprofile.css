@@ -1,0 +1,189 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Profile container */
+.profile-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Profile card */
+.profile-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile header */
+.profile-header {
+    text-align: center;
+    background-color: #ffcc00;  /* Yellow */
+    color: #000;  /* Black */
+    padding: 30px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-header:hover {
+    background-color: #e6b800;  /* Darker Yellow */
+}
+
+.profile-img-container {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border: 3px solid #ffcc00;
+    transition: transform 0.3s ease;
+}
+
+.profile-img-container:hover {
+    transform: scale(1.1);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Username and role */
+.username {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+.role {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Profile body */
+.profile-body {
+    padding: 20px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.profile-body h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffcc00;  /* Yellow */
+    transition: color 0.3s ease;
+}
+
+.profile-body h3:hover {
+    color: #e6b800;  /* Darker Yellow */
+}
+
+/* Profile footer */
+.profile-footer {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Button styling */
+button {
+    background-color: #ffcc00;  /* Yellow */
+    color: #000;  /* Black */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e6b800;  /* Darker Yellow */
+    transform: translateY(-5px);
+}
+
+/* Bid history */
+.bid-history {
+    margin-top: 30px;
+}
+
+.bid-history h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffcc00;  /* Yellow */
+}
+
+.bid-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bid-history li {
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bid-history li:hover {
+    background-color: #f1f1f1;
+    transform: translateX(5px);
+}
+
+.bid-history span {
+    font-weight: 600;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 100%;
+    }
+
+    .profile-header {
+        padding: 20px 10px;
+    }
+
+    .profile-body {
+        padding: 15px;
+    }
+
+    .profile-footer {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

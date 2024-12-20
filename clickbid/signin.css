@@ -1,0 +1,150 @@
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #121212, #333);
+    animation: backgroundAnimation 5s infinite alternate;
+}
+
+
+
+/* Sign In Container */
+.signin-container {
+    background: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sign In Form Title */
+.signin-form h2 {
+    font-size: 26px;
+    color: #FFDD00; /* Yellow color */
+    margin-bottom: 10px;
+    text-align: center;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* Glowing text animation */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px #FFDD00, 0 0 20px #FFDD00, 0 0 30px #FFDD00;
+    }
+    100% {
+        text-shadow: 0 0 20px #FFC107, 0 0 40px #FFC107, 0 0 60px #FFC107;
+    }
+}
+
+/* Form description text */
+.signin-form p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Form Group Label */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #FFDD00; /* Yellow color */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Form Group Input Fields */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Focused Input Field */
+.form-group input:focus {
+    border-color: #FFDD00;
+    outline: none;
+    box-shadow: 0 0 5px #FFDD00;
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #FFDD00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect for Button */
+.btn:hover {
+    background: #FFC107;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Sign Up Link */
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #FFDD00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #FFC107;
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .signin-container {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .signin-form h2 {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}

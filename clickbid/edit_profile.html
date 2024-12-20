@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Your Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="userfunction.php" style="text-decoration: none;">
+                <h2 class="logo">CLICKBID</h2>
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="Hirefreelancer.html">Hire Freelancer</a></li>
+                    <li><a href="findwork.html">Find Work</a></li>
+                    <li><a href="postproject.html">Post a Project</a></li>
+                    <li><a href="aboutpage.html">About</a></li>
+                    <li><a href="backend/signout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div class="signup-container">
+        <div class="signup-form">
+            <h2>Edit Your Profile</h2>
+
+            <form id="signupForm" action="backend/edit_profile.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Current Password</label>
+                    <input type="password" id="oldPassword" name="currentPassword" placeholder="Enter your Current password" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">New Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Choose Your City</label>
+                    <select id="city" name="city" required>
+                        <option value="">Select City</option>
+                        <option value="Cuttack">Cuttack</option>
+                        <option value="Bhubaneswar">Bhubaneswar</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+            <!-- <p class="login-link">Already have an account? <a href="signin.html">Sign In</a></p> -->
+        </div>
+    </div>
+</body>
+<script src="signup.js"></script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Error</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fbe9e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .error-message {
+            background-color: #f44336;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            animation: fadeInError 1.5s ease-in-out;
+        }
+        .error-message h1 {
+            font-size: 2.5em;
+            margin: 0 0 20px;
+        }
+        .error-message p {
+            font-size: 1.2em;
+        }
+        .error-message span {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        .retry-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ffffff;
+            color: #f44336;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        .retry-button:hover {
+            background-color: #f44336;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeInError {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-message">
+        <h1>Oops!</h1>
+        <p>Something went wrong with your payment.</p>
+        <p><span>Please check your payment details and try again.</span></p>
+        <a href="paymentmethod.html" class="retry-button">Retry Payment</a>
+    </div>
+
+</body>
+</html>

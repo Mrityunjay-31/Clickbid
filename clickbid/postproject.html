@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Project</title>
+    <link rel="stylesheet" href="postproject.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" style="text-decoration: none;">
+                <h2 class="logo">CLICKBID</h2>
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="Hirefreelancer.html">Hire Freelancer</a></li>
+                    <li><a href="findwork.html">Find Work</a></li>
+                    <li><a href="postproject.html">Post a Project</a></li>
+                    <li><a href="aboutpage.html">About</a></li>
+                    <li><a href="backend/signout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Create Your Project</h2>
+        <form method="post" action="backend/post_project.php">
+            <label for="title">Project Title:</label>
+            <input type="text" id="title" name="project_title" placeholder="Enter a project title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" rows="6" name="description" placeholder="Describe your project in detail" required></textarea>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="web-development">Web Development</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="content-writing">Content Writing</option>
+                <option value="app-development">App Development</option>
+                <option value="marketing">Marketing</option>
+            </select>
+
+            <label for="budget">Budget (in USD):</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
+
+            <label for="deadline">Deadline:</label>
+            <input type="datetime-local" id="deadline" name="deadline" required>
+
+            <label for="skills">Required Skills (Comma-separated):</label>
+            <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, Photoshop, SEO">
+
+            <label>Project Features:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" value="Responsive Design" name="features[]"> Responsive Design</label>
+                <label><input type="checkbox" value="SEO Optimization" name="features[]"> SEO Optimization</label>
+                <label><input type="checkbox" value="Mobile Friendly" name="features[]"> Mobile Friendly</label>
+                <label><input type="checkbox" value="API Integration" name="features[]"> API Integration</label>
+            </div>
+
+            <label for="contact">Preferred Contact Method:</label>
+            <select id="contact" name="contact_type" required>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="messenger">Messenger</option>
+            </select>
+            <label for="Contact">Contact</label>
+            <input type="text" id="title" name="contact" placeholder="Enter Your Contact Information" required>
+
+            <button type="submit">Post Project</button>
+        </form>
+    </main>
+    <footer class="footer ">
+        <div class="footer-container ">
+            <!-- About Section -->
+            <div class="footer-about ">
+                <h3>About Bid Web Auction</h3>
+                <p>Bid Web Auction is your trusted platform for bidding on projects and connecting with top talent worldwide. Empowering businesses and professionals to succeed together.</p>
+                <a href="aboutpage.html" class="btn-footer ">Learn More</a>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links ">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Auctionresult.html">Auction Result</a></li>
+                    <li><a href="blogornews.html">Blog and News</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-contact ">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@clickbid.com ">support@clickbid.com</a></p>
+                <p>Phone: +91 9876543210</p>
+                <p>Address: Bhubaneswar, Odisha, India</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom ">
+            <p>&copy; 2024 CLICKBID Web Auction. All rights reserved.</p>
+            <ul class="footer-bottom-links ">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#faq">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

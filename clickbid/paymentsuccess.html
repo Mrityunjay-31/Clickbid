@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .success-message {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .success-message h1 {
+            font-size: 2.5em;
+            margin: 0 0 20px;
+        }
+        .success-message p {
+            font-size: 1.2em;
+        }
+        .success-message span {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        .home-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        .home-button:hover {
+            background-color: #4CAF50;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-message">
+        <h1>Congratulations!</h1>
+        <p>Your payment was successful.</p>
+        <p>Your transaction ID is: <span id="transactionID"></span></p>
+        <a href="" class="home-button">Go Back to Homepage</a>
+    </div>
+
+    <script>
+        // Extract transaction ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const transactionId = urlParams.get('transaction_id');
+
+        // Display the transaction ID
+        document.getElementById('transactionID').textContent = transactionId;
+    </script>
+
+</body>
+</html>

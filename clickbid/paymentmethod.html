@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="paymentmethod.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Complete Your Payment</h2>
+
+        <form id="paymentForm" class="payment-form">
+            <div class="input-field">
+                <label for="paymentMethod">Select Payment Method</label>
+                <select id="paymentMethod" required>
+                    <option value="creditCard">Credit/Debit Card</option>
+                    <option value="upi">UPI</option>
+                    <option value="wallet">Wallet</option>
+                    <option value="netBanking">Net Banking</option>
+                </select>
+            </div>
+
+            <div class="input-field" id="cardDetails">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="Enter card number" required />
+            </div>
+
+            <div class="input-field" id="expiryDetails">
+                <label for="expiryDate">Expiry Date (MM/YY)</label>
+                <input type="text" id="expiryDate" placeholder="MM/YY" required />
+            </div>
+
+            <div class="input-field" id="cvvDetails">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="CVV" required />
+            </div>
+
+            <div class="input-field">
+                <label for="cardholderName">Cardholder Name</label>
+                <input type="text" id="cardholderName" placeholder="Enter cardholder's name" required />
+            </div>
+
+            <div class="input-field">
+                <label for="billingAddress">Billing Address</label>
+                <input type="text" id="billingAddress" placeholder="Enter billing address" required />
+            </div>
+
+            <div class="input-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="input-field">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter your phone number" required />
+            </div>
+
+            <div class="input-field">
+                <label for="couponCode">Coupon Code (if any)</label>
+                <input type="text" id="couponCode" placeholder="Enter coupon code" />
+            </div>
+
+            <p>Total Amount: <span id="amount">₹500</span></p>
+
+            <button type="button" id="payButton" class="pay-button">Pay Now</button>
+        </form>
+
+        <div id="paymentStatus" class="payment-status" style="display: none;">
+            <h3>Payment Status</h3>
+            <p id="statusMessage"></p>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

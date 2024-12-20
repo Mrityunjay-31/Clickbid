@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Settings - Web Auction</title>
+    <link rel="stylesheet" href="setting.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="manage_bids.html">Manage Bids</a>
+            <a href="user_profiles.html">User Profiles</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Website Settings</h2>
+
+        <div class="settings-form">
+            <!-- Appearance Settings -->
+            <div class="section">
+                <h3>Appearance Settings</h3>
+                <label for="site-title">Website Title</label>
+                <input type="text" id="site-title" name="site-title" value="Web Auction Platform" placeholder="Enter Website Title">
+
+                <label for="site-logo">Site Logo URL</label>
+                <input type="text" id="site-logo" name="site-logo" placeholder="Enter Logo URL" value="https://example.com/logo.png">
+
+                <label for="primary-color">Primary Color</label>
+                <input type="color" id="primary-color" name="primary-color" value="#673ab7">
+
+                <label for="background-color">Background Color</label>
+                <input type="color" id="background-color" name="background-color" value="#ffffff">
+            </div>
+
+            <!-- Fee Settings -->
+            <div class="section">
+                <h3>Fee Settings</h3>
+                <label for="platform-fee">Platform Fee (%)</label>
+                <input type="number" id="platform-fee" name="platform-fee" value="5" min="0" max="100" step="1" placeholder="Enter Platform Fee">
+
+                <label for="transaction-fee">Transaction Fee (USD)</label>
+                <input type="number" id="transaction-fee" name="transaction-fee" value="1.5" min="0" step="0.1" placeholder="Enter Transaction Fee">
+            </div>
+
+            <!-- Notification Settings -->
+            <div class="section">
+                <h3>Notification Settings</h3>
+                <label for="email-notifications">Enable Email Notifications</label>
+                <input type="checkbox" id="email-notifications" name="email-notifications" checked>
+                <label for="email-notifications">Yes, enable email notifications</label>
+
+                <label for="sms-notifications">Enable SMS Notifications</label>
+                <input type="checkbox" id="sms-notifications" name="sms-notifications">
+                <label for="sms-notifications">Yes, enable SMS notifications</label>
+
+                <label for="notification-frequency">Notification Frequency</label>
+                <select id="notification-frequency" name="notification-frequency">
+                <option value="instant">Instant</option>
+                <option value="hourly">Hourly</option>
+                <option value="daily">Daily</option>
+            </select>
+            </div>
+
+            <!-- Save Settings Button -->
+            <div class="section">
+                <button type="button" class="btn">Save Settings</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Auction Website. Developed by Your Name. <a href="#">Contact</a></p>
+    </footer>
+
+</body>
+
+</html>

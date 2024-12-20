@@ -1,0 +1,1552 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    line-height: 1.6;
+    height: 1000px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffcd00;
+    color: #121212;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9c00;
+}
+
+
+/* Header */
+
+header {
+    background-color: #121212;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    color: #ffcd00;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    color: #f1f1f1;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcd00;
+}
+
+
+/* General Styles for Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Navbar links */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+
+/* Responsive navbar for mobile view */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links a {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+/* Main Content */
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* height: 2500px; */
+}
+
+section {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 24px;
+    color: #ffcd00;
+    margin-bottom: 20px;
+}
+
+
+/* Profile Section */
+
+.profile-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    font-size: 22px;
+    color: #fff;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.profile-info button {
+    background-color: #ff9c00;
+}
+
+.profile-info button:hover {
+    background-color: #ff7700;
+}
+
+
+/* Auction Cards */
+
+.card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Apply animation delay to each card for a staggered effect */
+
+.card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.card:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.card:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.card:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.upbtn {
+    background-color: #f1c40f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 30%;
+    text-align: center;
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.upbtn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Notifications Section */
+
+
+/* General Styles for Notification Section */
+
+.notifications {
+    background-color: #1d1d1d;
+    /* Deep Black Background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    /* Darker shadow for depth */
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Section Title */
+
+.section-title {
+    font-size: 24px;
+    color: #f1c40f;
+    /* Yellow for the Title */
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Notification Styles */
+
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #2c2c2c;
+    /* Dark background for the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid transparent;
+}
+
+
+/* Hover effect on Notification */
+
+.notification:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Notification Icon */
+.notification-icon {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #f1c40f;
+    /* Yellow for icons */
+}
+
+
+/* Notification Content */
+
+.notification-content h3 {
+    font-size: 18px;
+    
+    /* Yellow for notification titles */
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.notification-content p {
+    font-size: 14px;
+    color: #fff;
+    /* White text for content */
+    margin: 0;
+}
+
+
+/* Notification Types */
+
+.notification-info {
+    border-left-color: #f1c40f;
+    /* Yellow for Info Notifications */
+    background-color: #333333;
+    /* Darker background */
+}
+
+.notification-warning {
+    border-left-color: #f39c12;
+    /* Orange-Yellow for Warnings */
+    background-color: #2f2f2f;
+    /* Darker gray background */
+}
+
+.notification-success {
+    border-left-color: #28a745;
+    /* Green for Success */
+    background-color: #262626;
+    /* Very dark background */
+}
+
+
+/* Dismiss Button */
+
+.dismiss-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #f1c40f;
+    /* Yellow text for dismiss button */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.dismiss-btn:hover {
+    color: #fff;
+    /* Change text to white on hover */
+}
+
+
+/* Font Awesome Icons */
+
+.fas {
+    font-size: 20px;
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .notifications {
+        padding: 15px;
+    }
+    .notification {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .notification-icon {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Settings Section */
+
+
+/* Statistics Section */
+
+
+/* User Statistics Section */
+
+#statistics {
+    background-color: #1e1e1e;
+    /* Dark background */
+    color: #f1c40f;
+    /* Yellow text */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+/* Section title */
+
+#statistics h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #f1c40f;
+}
+
+
+/* Statistics container to hold the cards */
+
+.statistics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+}
+
+
+/* Each statistics card */
+
+.statistics-card {
+    background-color: #2c2c2c;
+    /* Darker grey background for each card */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Title for each statistic card */
+
+.statistics-card h3 {
+    font-size: 1.3rem;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+
+/* Value for each statistic card */
+
+.statistics-card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+/* Subtitle for each statistic card */
+
+.statistics-card span {
+    font-size: 1rem;
+    color: #ccc;
+    /* Light grey for the subtitle */
+}
+
+
+/* Hover effect for statistics cards */
+
+.statistics-card:hover {
+    transform: translateY(-10px);
+    /* Lift the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    #statistics {
+        padding: 15px;
+    }
+    .statistics-container {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .statistics-container {
+        grid-template-columns: 1fr;
+        /* Single column on very small screens */
+    }
+}
+
+
+/* Transaction History Section */
+
+#transaction-history {
+    background-color: #1e1e1e;
+    /* Dark background */
+    color: #f1c40f;
+    /* Yellow text */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+/* Section title */
+
+#transaction-history h2 {
+    font-size: 2rem;
+    color: #f1c40f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Transaction Summary Cards */
+
+.transaction-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+/* Summary card for transaction stats */
+
+.summary-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+}
+
+.summary-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.summary-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* Transaction Filter (Search & Dropdown) */
+
+.transaction-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #2c2c2c;
+    color: #f1c40f;
+}
+
+.filter-box {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #2c2c2c;
+    color: #f1c40f;
+}
+
+
+/* Transactions Table */
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.transaction-table th {
+    background-color: #333;
+    color: #f1c40f;
+}
+
+.transaction-table td {
+    background-color: #2c2c2c;
+    color: #ccc;
+}
+
+
+/* Transaction Row Styles */
+
+.transaction-table tr.completed td {
+    background-color: #27ae60;
+    /* Green for completed */
+    color: #fff;
+}
+
+.transaction-table tr.pending td {
+    background-color: #f39c12;
+    /* Yellow for pending */
+    color: #fff;
+}
+
+.transaction-table tr.failed td {
+    background-color: #e74c3c;
+    /* Red for failed */
+    color: #fff;
+}
+
+
+/* Status Labels */
+
+.status {
+    font-weight: bold;
+}
+
+.status.completed {
+    color: #27ae60;
+}
+
+.status.pending {
+    color: #f39c12;
+}
+
+.status.failed {
+    color: #e74c3c;
+}
+
+
+/* Hover effect for rows */
+
+.transaction-table tr:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .transaction-summary {
+        flex-direction: column;
+    }
+    .summary-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .transaction-filter {
+        flex-direction: column;
+    }
+    .search-box,
+    .filter-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .transaction-table td,
+    .transaction-table th {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #121212;
+    padding: 20px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+
+/* New Sections Styling */
+
+#testimonials {
+    background-color: #2c2c2c;
+    padding: 50px;
+    color: #f1c40f;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.testimonials-carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-card span {
+    display: block;
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+#faq {
+    background-color: #1e1e1e;
+    padding: 40px;
+    color: #f1c40f;
+}
+
+#faq h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background-color: #333;
+    color: #f1c40f;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f39c12;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question {
+    background-color: #f39c12;
+}
+
+
+/* Activity Feed */
+
+#activity-feed {
+    background-color: #333;
+    color: #f1c40f;
+    padding: 40px;
+}
+
+#activity-feed h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feed-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feed-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #444;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.feed-list li:hover {
+    background-color: #f39c12;
+    cursor: pointer;
+}
+
+.feed-list li i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.timestamp {
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+#upcoming-projects {
+    background-color: #1e1e1e;
+    color: #f1c40f;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
+#up-h2 {
+    font-size: 2.5rem;
+    margin-bottom: -30px;
+    text-align: center;
+    color: #f1c40f;
+}
+
+.project-card {
+    background-color: #333;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.project-card .btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-card .btn:hover {
+    background-color: #e67e22;
+}
+
+
+/* Payment Methods */
+
+#payment-methods {
+    background-color: #2c2c2c;
+    padding: 40px;
+    color: #f1c40f;
+}
+
+#payment-methods h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.payment-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-card h3 {
+    font-size: 1.5rem;
+}
+
+.payment-card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.payment-card .btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-card .btn:hover {
+    background-color: #c0392b;
+}
+
+
+/* Wishlist */
+
+#wishlist {
+    background-color: #1e1e1e;
+    padding: 40px;
+    color: #f1c40f;
+}
+
+#wishlist h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wishlist-item {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.wishlist-item p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.wishlist-item .btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wishlist-item .btn:hover {
+    background-color: #c0392b;
+}
+
+
+/* Security & Privacy */
+
+
+/* Security & Privacy Section */
+
+#security-settings {
+    background-color: #1e1e1e;
+    /* Dark background */
+    color: #f1c40f;
+    /* Yellow text */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+/* Section title */
+
+#security-settings h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Each security option block */
+
+.security-option {
+    background-color: #2c2c2c;
+    /* Darker grey background for each option */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.security-option h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+    /* Yellow title color */
+}
+
+
+/* Paragraphs in each block */
+
+.security-option p {
+    font-size: 1rem;
+    color: #ccc;
+    /* Light grey text */
+}
+
+
+/* Buttons for each action */
+
+.security-option .btn {
+    background-color: #f1c40f;
+    /* Yellow button */
+    color: #000000;
+    /* Black text */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+
+/* Button hover effect */
+
+.security-option .btn:hover {
+    background-color: #f39c12;
+    /* Darker yellow on hover */
+}
+
+
+/* Space out buttons when multiple are present */
+
+.security-option .btn+.btn {
+    margin-top: 10px;
+}
+
+
+/* Add responsiveness */
+
+@media (max-width: 768px) {
+    #security-settings {
+        padding: 10px;
+    }
+    .security-option {
+        padding: 10px;
+    }
+    .security-option .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* Hover Effects for Buttons */
+
+button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background-color: #ff7700;
+}
+
+* General Settings Section */ .settings {
+    background-color: #1d1d1d;
+    /* Deep Black Background */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 1450px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Section Title */
+
+.section-title {
+    font-size: 24px;
+    color: #f1c40f;
+    /* Yellow for the Title */
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Setting Card Styles */
+
+.setting-card {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.setting-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Title in each setting card */
+
+.setting-card h3 {
+    font-size: 20px;
+    color: #f1c40f;
+    /* Yellow for Titles */
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+/* Paragraph for description */
+
+.setting-card p {
+    font-size: 14px;
+    color: #fff;
+    /* White text */
+    margin-bottom: 15px;
+}
+
+
+/* Buttons */
+
+.btn {
+    background-color: #f1c40f;
+    /* Yellow */
+    color: #1d1d1d;
+    /* Deep Black */
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #f39c12;
+    /* Slightly darker yellow on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+
+/* Setting Labels */
+
+.setting-label {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+
+/* Checkbox for settings */
+
+input[type="checkbox"] {
+    accent-color: #f1c40f;
+    /* Yellow accent for checkbox */
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .settings {
+        padding: 20px;
+    }
+    .setting-card {
+        padding: 15px;
+    }
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Modal Overlay */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+/* Modal Container */
+
+.modal-container {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+/* Form Styling */
+
+#support-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#support-form input,
+#support-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#support-form textarea {
+    height: 150px;
+}
+
+
+/* Close Button */
+
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0px;
+    /* margin-bottom: 1500px; */
+    position: relative;
+    transition: background 0.5s ease;
+}
+
+.footer:hover {
+    background-color: #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Footer About */
+
+.footer-about {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-about h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffb400;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.footer-about h3:hover {
+    color: #e6a200;
+    transform: translateX(5px);
+}
+
+.footer-about p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn-footer {
+    display: inline-block;
+    background-color: #ffb400;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-footer:hover {
+    background-color: #e6a200;
+    transform: scale(1.05);
+}
+
+
+/* Footer Links */
+
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffb400;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffb400;
+    transform: scale(1.1);
+}
+
+
+/* Footer Contact */
+
+.footer-contact {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-contact h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffb400;
+}
+
+.footer-contact p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: #ffb400;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2) rotate(15deg);
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.footer-bottom-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.footer-bottom-links a {
+    text-decoration: none;
+    color: #ffb400;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #e6a200;
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        text-align: center;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Auction Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="allprojectrelated.html">Our Projects</a>
+            <a href="user_profiles.html">User Profiles</a>
+            <a href="setting.html">Settings</a>
+            <a href="backend/signout.php">Logout</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2>Welcome Back to Your Dashboard</h2>
+
+        <!-- Stats Section -->
+        <div class="stats">
+            <div class="stat">
+                <h3>30</h3>
+                <p>Projects Posted</p>
+            </div>
+            <div class="stat">
+                <h3>20</h3>
+                <p>Active Bids</p>
+            </div>
+            <div class="stat">
+                <h3>$15,000</h3>
+                <p>Total Earnings</p>
+            </div>
+        </div>
+
+        <!-- Dashboard Cards Section -->
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Create a New Project</h3>
+                <p>Post your requirements and get bids from top freelancers.</p>
+                <a href="post_project.html" class="btn">Create Now</a>
+            </div>
+            <div class="card">
+                <h3>Browse Freelancers</h3>
+                <p>Explore profiles and hire the perfect freelancer for your project.</p>
+                <a href="hire_freelancer.html" class="btn">Browse Freelancers</a>
+            </div>
+            <div class="card">
+                <h3>Check Active Bids</h3>
+                <p>Manage bids on your projects and communicate with freelancers.</p>
+                <a href="active_bids.html" class="btn">View Bids</a>
+            </div>
+            <div class="card">
+                <h3>Your Profile</h3>
+                <p>Update your information and manage your account settings.</p>
+                <a href="profile.html" class="btn">Update Profile</a>
+            </div>
+        </div>
+
+        <!-- Recent Activity Graph Section -->
+        <div class="graph-container">
+            <h3>Recent Activity (Graph)</h3>
+            <div class="graph"></div>
+        </div>
+
+        <!-- Profile Info Section -->
+        <div class="profile-info">
+            <h3>Profile Overview</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john@example.com</p>
+            <p><strong>Role:</strong> Freelancer</p>
+        </div>
+
+        <!-- Notifications Section -->
+        <div class="notifications">
+            <h3>Recent Notifications</h3>
+            <ul class="notification-list">
+                <li>New bid received for your project "Mobile App Development"</li>
+                <li>Your project "SEO Optimization" has been successfully completed</li>
+                <li>You have 3 new messages from freelancers</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer ">
+        <div class="footer-container ">
+            <!-- About Section -->
+            <div class="footer-about ">
+                <h3>About Bid Web Auction</h3>
+                <p>Bid Web Auction is your trusted platform for bidding on projects and connecting with top talent worldwide. Empowering businesses and professionals to succeed together.</p>
+                <a href="/about.html " class="btn-footer ">Learn More</a>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links ">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/home.html ">Home</a></li>
+                    <li><a href="/projects.html ">Projects</a></li>
+                    <li><a href="/how-it-works.html ">How It Works</a></li>
+                    <li><a href="/contact.html ">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-contact ">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@clickbid.com ">support@clickbid.com</a></p>
+                <p>Phone: +91 9876543210</p>
+                <p>Address: Cuttack, Odisha, India</p>
+                <div class="social-icons" style="margin-left: 70px;">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom ">
+            <p>&copy; 2024 CLICKBID Web Auction. All rights reserved.</p>
+            <ul class="footer-bottom-links ">
+                <li><a href="/terms.html ">Terms of Service</a></li>
+                <li><a href="/privacy.html ">Privacy Policy</a></li>
+                <li><a href="/faq.html ">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

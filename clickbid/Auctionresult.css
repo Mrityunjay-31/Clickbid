@@ -1,0 +1,299 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 40px 0;
+}
+
+/* Container for central alignment */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Auction result section */
+.auction-result {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+    border-left: 5px solid #FFCC00;
+}
+
+.auction-result h1 {
+    font-size: 32px;
+    color: #FFCC00; /* Yellow */
+    margin-bottom: 20px;
+}
+
+.auction-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-info {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.project-info img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-info .project-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.result-info {
+    flex: 1;
+    max-width: 400px;
+    text-align: left;
+}
+
+.result-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.result-info .winning-bid {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFCC00; /* Yellow */
+    margin-bottom: 15px;
+}
+
+.result-info .winner {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.result-info .winner span {
+    font-weight: bold;
+    color: #333;
+}
+
+.auction-end-time {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.complete-project-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333; /* Black */
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.complete-project-btn:hover {
+    background-color: #FFCC00; /* Yellow on hover */
+}
+
+/* Project Progress Section */
+.project-progress {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border-left: 5px solid #FFCC00; /* Yellow border */
+}
+
+.project-progress h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.progress-tracker {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.progress-step {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border-radius: 25px;
+    text-align: center;
+    width: 20%;
+    font-weight: bold;
+    color: #333;
+}
+
+.progress-step.completed {
+    background-color: #28a745; /* Green for completed */
+    color: #fff;
+}
+
+.progress-step.in-progress {
+    background-color: #FFCC00; /* Yellow for in-progress */
+    color: #fff;
+}
+
+/* Rating & Feedback Section */
+.rating-feedback {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border-left: 5px solid #FFCC00; /* Yellow border */
+}
+
+.rating-feedback h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.star {
+    font-size: 30px;
+    color: #FFCC00; /* Yellow stars */
+    cursor: pointer;
+}
+
+.feedback-text {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.submit-feedback-btn {
+    padding: 12px 25px;
+    background-color: #FFCC00; /* Yellow */
+    color: #333; /* Black text */
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-feedback-btn:hover {
+    background-color: #333; /* Black on hover */
+    color: #fff;
+}
+
+/* Communication Section */
+.communication {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border-left: 5px solid #FFCC00; /* Yellow border */
+}
+
+.message-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333; /* Black */
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.message-btn:hover {
+    background-color: #FFCC00; /* Yellow on hover */
+}
+
+/* Related Projects Section */
+.related-projects {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border-left: 5px solid #FFCC00; /* Yellow border */
+}
+
+.related-projects h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-item {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.project-item a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #FFCC00; /* Yellow */
+    color: #333; /* Black */
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-item a:hover {
+    background-color: #333; /* Black on hover */
+    color: #fff;
+}

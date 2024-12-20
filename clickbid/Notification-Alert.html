@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications & Alerts</title>
+    <link rel="stylesheet" href="Notification-Alert.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- User Profile Section -->
+        <section class="user-profile">
+            <h2>Welcome, <span id="user-name">Rabi</span></h2>
+            <p>You're currently monitoring 3 auctions.</p>
+        </section>
+
+        <!-- Notifications Section -->
+        <section class="notifications">
+            <h2>Your Notifications</h2>
+            <div class="notifications-controls">
+                <input type="text" id="search-notifications" placeholder="Search notifications...">
+                <button id="clear-notifications" class="clear-btn">Clear All Notifications</button>
+            </div>
+            <div id="notifications-list" class="notifications-list">
+                <!-- Dynamic notifications will be added here -->
+            </div>
+        </section>
+
+        <!-- Personalized Alerts Section -->
+        <section class="alerts">
+            <h2>Set Personalized Alerts</h2>
+            <form id="alert-form" class="alert-form">
+                <label for="alert-item">Item Name:</label>
+                <input type="text" id="alert-item" placeholder="Enter auction item name">
+                <label for="alert-condition">Alert Condition:</label>
+                <select id="alert-condition">
+                    <option value="live">Item Goes Live</option>
+                    <option value="ending">Auction Ending Soon</option>
+                    <option value="outbid">Outbid Notification</option>
+                </select>
+                <button type="submit" id="set-alert-btn">Set Alert</button>
+            </form>
+            <br>
+            <h3>Your Alerts</h3>
+            <div id="alerts-list" class="alerts-list">
+                <!-- Dynamic alerts will be added here -->
+            </div>
+        </section>
+
+        <!-- Alert Types List -->
+        <section class="alert-types">
+            <h3>Common Alert Types</h3>
+            <br>
+            <ul>
+                <li><strong>Item Goes Live:</strong> Receive a notification when an auction starts.</li>
+                <li><strong>Auction Ending Soon:</strong> Get notified when an auction is about to end.</li>
+                <li><strong>Outbid:</strong> Notify me if I’ve been outbid.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

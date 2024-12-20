@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admindashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <title>Admin Dashboard - Web Auction</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CLICKBID</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="allprojectrelated.html">Our Projects</a>
+            <a href="aboutpage.html">About us</a>
+            <a href="backend/signout.php">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome, Admin</h2>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>150</h3>
+                <p>Active Projects</p>
+            </div>
+            <div class="stat">
+                <h3>200</h3>
+                <p>Active Bids</p>
+            </div>
+            <div class="stat">
+                <h3>$50,000</h3>
+                <p>Total Earnings</p>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Manage Bids</h3>
+                <p>View and control all active bids across the platform.</p>
+                <a href="manage_bids.html" class="btn">Manage Bids</a>
+            </div>
+            <div class="card">
+                <h3>Manage Users</h3>
+                <p>View, edit, or deactivate user accounts and profiles.</p>
+                <a href="user_profiles.html" class="btn">Manage Users</a>
+            </div>
+            <div class="card">
+                <h3>Manage Projects</h3>
+                <p>View and approve/reject projects submitted by users.</p>
+                <a href="projects.html" class="btn">Manage Projects</a>
+            </div>
+
+        </div>
+
+        <div class="recent-bids">
+            <h3>Recent Bids</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bid ID</th>
+                        <th>Project</th>
+                        <th>User</th>
+                        <th>Bid Amount</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1001</td>
+                        <td>Website Development</td>
+                        <td>John Doe</td>
+                        <td>$1200</td>
+                        <td>Pending</td>
+                        <td><button class="btn">Approve</button></td>
+                    </tr>
+                    <tr>
+                        <td>#1002</td>
+                        <td>Mobile App Design</td>
+                        <td>Jane Smith</td>
+                        <td>$900</td>
+                        <td>Approved</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#1003</td>
+                        <td>SEO Optimization</td>
+                        <td>Samuel Lee</td>
+                        <td>$800</td>
+                        <td>Rejected</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <footer class="footer ">
+        <div class="footer-container ">
+            <div class="footer-about ">
+                <h3>About Bid Web Auction</h3>
+                <p>Bid Web Auction is your trusted platform for bidding on projects and connecting with top talent worldwide. Empowering businesses and professionals to succeed together.</p>
+                <a href="/about.html " class="btn-footer ">Learn More</a>
+            </div>
+
+            <div class="footer-links ">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/home.html ">Home</a></li>
+                    <li><a href="/projects.html ">Projects</a></li>
+                    <li><a href="/how-it-works.html ">How It Works</a></li>
+                    <li><a href="/contact.html ">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact ">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@clickbid.com ">support@clickbid.com</a></p>
+                <p>Phone: +91 9876543210</p>
+                <p>Address: Cuttack, Odisha, India</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom ">
+            <p>&copy; 2024 CLICKBID Web Auction. All rights reserved.</p>
+            <ul class="footer-bottom-links ">
+                <li><a href="/terms.html ">Terms of Service</a></li>
+                <li><a href="/privacy.html ">Privacy Policy</a></li>
+                <li><a href="/faq.html ">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
